@@ -37,6 +37,8 @@ header {
         font-size: 1.3rem; }
       header nav ul .nav-menu .nav-links {
         display: flex; }
+        header nav ul .nav-menu .nav-links li:hover {
+          text-decoration: underline; }
     header nav ul .toggle-darkmode {
       display: flex; }
       header nav ul .toggle-darkmode li {
@@ -55,10 +57,12 @@ header {
   .home-content .container .myName {
     font-size: 1.8rem;
     font-weight: 800;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    margin-top: 1rem; }
   .home-content .container .myPost {
     font-size: 1.4rem;
-    margin: 1.5rem auto; }
+    margin: 1.5rem auto;
+    margin-top: 0; }
   .home-content .container .links ul {
     max-width: fit-content;
     margin: auto; }
@@ -70,7 +74,8 @@ header {
       border-radius: 10px; }
 
 footer {
-  margin-top: 1rem; }
+  margin-top: 2.5rem;
+  font-size: 1.2rem; }
   footer .container {
     display: flex;
     justify-content: space-between; }
