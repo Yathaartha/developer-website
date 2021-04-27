@@ -44,38 +44,41 @@ header {
       header nav ul .toggle-darkmode li {
         padding: 1.5rem 0.5rem; }
 
-.home-content .container {
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-  .home-content .container .myphoto {
-    margin: 2rem auto; }
-    .home-content .container .myphoto img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px; }
-  .home-content .container .myName {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin: 2rem auto;
-    margin-top: 1rem; }
-  .home-content .container .myPost {
-    font-size: 1.4rem;
-    margin: 1.5rem auto;
-    margin-top: 0; }
-  .home-content .container .links ul {
-    max-width: fit-content;
-    margin: auto; }
-    .home-content .container .links ul li {
-      background-color: #3b3d42;
-      padding: 0.5rem 3rem;
-      margin-bottom: 0.4rem;
-      font-size: 1.2rem;
-      border-radius: 10px; }
+.home-content {
+  margin-bottom: 2rem; }
+  .home-content .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .home-content .container .myphoto {
+      margin: 2rem auto; }
+      .home-content .container .myphoto img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px; }
+    .home-content .container .myName {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin: 2rem auto;
+      margin-top: 1rem; }
+    .home-content .container .myPost {
+      font-size: 1.4rem;
+      margin: 1.5rem auto;
+      margin-top: 0; }
+    .home-content .container .links ul {
+      max-width: fit-content;
+      margin: auto; }
+      .home-content .container .links ul li {
+        background-color: #3b3d42;
+        padding: 0.5rem 3rem;
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+        border-radius: 10px; }
 
 footer {
-  margin-top: 2.5rem;
-  font-size: 1.2rem; }
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem; }
   footer .container {
     display: flex;
     justify-content: space-between; }
@@ -86,3 +89,22 @@ footer {
       padding: 0 0.5rem; }
       footer .socials ul li i {
         font-size: 1.4rem; }
+
+.about-content .container:last-child {
+  border-bottom: 1px solid #3b3d42; }
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin: 3rem auto 2rem auto;
+  font-weight: 900; }
+
+.about-content h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem; }
+
+.about-content h4 {
+  font-size: 1.5rem; }
+
+.about-content ul {
+  list-style: disc;
+  margin-left: 2rem; }
