@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.4;
+  background-color: #292a2d;
+  color: #a9a9b3; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+.container {
+  width: 50%;
+  margin: auto; }
+
+header {
+  background-color: #252627; }
+  header nav ul {
+    display: flex;
+    justify-content: space-between; }
+    header nav ul .breadcrumbs {
+      font-weight: 900;
+      letter-spacing: 3px; }
+    header nav ul li {
+      font-size: 1rem;
+      padding: 1.5rem 1rem; }
+    header nav ul .nav-menu {
+      display: flex; }
+      header nav ul .nav-menu i {
+        font-size: 1.3rem; }
+      header nav ul .nav-menu .nav-links {
+        display: flex; }
+    header nav ul .toggle-darkmode {
+      display: flex; }
+      header nav ul .toggle-darkmode li {
+        padding: 1.5rem 0.5rem; }
+
+.home-content .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .home-content .container .myphoto {
+    margin: 2rem auto; }
+    .home-content .container .myphoto img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px; }
+  .home-content .container .myName {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 2rem auto; }
+  .home-content .container .myPost {
+    font-size: 1.4rem;
+    margin: 1.5rem auto; }
+  .home-content .container .links ul {
+    max-width: fit-content;
+    margin: auto; }
+    .home-content .container .links ul li {
+      background-color: #3b3d42;
+      padding: 0.5rem 3rem;
+      margin-bottom: 0.4rem;
+      font-size: 1.2rem;
+      border-radius: 10px; }
+
+footer {
+  margin-top: 1rem; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+  footer .socials ul {
+    display: flex;
+    justify-content: center; }
+    footer .socials ul li {
+      padding: 0 0.5rem; }
+      footer .socials ul li i {
+        font-size: 1.4rem; }
