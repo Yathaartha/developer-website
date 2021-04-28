@@ -1,3 +1,4 @@
+startTimer();
 const toggler = document.getElementById("toggler");
 if (document.querySelector(".links")) {
   const listItems = document.querySelector(".links");
@@ -14,8 +15,11 @@ if (document.querySelector(".links")) {
     });
   });
 }
+const cursor = document.querySelector(".cursor");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
+
+let milisec = 0;
 
 toggler.addEventListener("click", () => {
   if (body.classList.contains("bg-light-body")) {
@@ -34,6 +38,21 @@ if (document.querySelector(".current")) {
   const currentPage = document.querySelector(".current");
   const displayCurrent = document.querySelector(".currentPage");
   if (currentPage.textContent != "home") {
-    displayCurrent.innerHTML = `<a href="#">${currentPage.textContent.toLowerCase()}</a>`;
+    displayCurrent.innerHTML = `<a href="#">${currentPage.textContent.toLowerCase()}</a>/`;
+  }
+}
+
+function startTimer() {
+  setInterval(timeHandler, 10);
+}
+
+function timeHandler() {
+  milisec++;
+  if (milisec === 100) {
+    cursor.style.visibility = "hidden";
+  }
+  if (milisec === 200) {
+    cursor.style.visibility = "visible";
+    milisec = 0;
   }
 }

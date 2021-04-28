@@ -42,6 +42,13 @@ header {
     header nav ul .breadcrumbs {
       font-weight: 900;
       letter-spacing: 3px; }
+    header nav ul .cursor {
+      display: flex;
+      align-items: center; }
+      header nav ul .cursor img {
+        width: 10px;
+        height: 16px;
+        margin-top: 5px; }
     header nav ul li {
       font-size: 1rem;
       padding: 1.5rem 1rem; }
