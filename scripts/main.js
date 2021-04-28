@@ -29,3 +29,11 @@ toggler.addEventListener("click", () => {
     header.classList.add("bg-light-nav");
   }
 });
+
+if (document.querySelector(".current")) {
+  const currentPage = document.querySelector(".current");
+  const displayCurrent = document.querySelector(".currentPage");
+  if (currentPage.textContent != "home") {
+    displayCurrent.innerHTML = `<a href="#">${currentPage.textContent.toLowerCase()}</a>`;
+  }
+}

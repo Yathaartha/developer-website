@@ -34,6 +34,8 @@ ul {
 
 header {
   background-color: #252627; }
+  header #breadcrumb {
+    display: flex; }
   header nav ul {
     display: flex;
     justify-content: space-between; }
