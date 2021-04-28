@@ -129,3 +129,6 @@ footer {
 .about-content ul {
   list-style: disc;
   margin-left: 2rem; }
+
+.resume-content img {
+  max-width: 100%; }
