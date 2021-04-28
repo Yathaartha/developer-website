@@ -9,6 +9,18 @@ body {
   background-color: #292a2d;
   color: #a9a9b3; }
 
+.bg-light-nav {
+  background-color: #fafafa;
+  color: #222222; }
+
+.bg-light-body {
+  background-color: #fff;
+  color: #222222; }
+
+.bg-light-btn {
+  background-color: #eaeaea;
+  color: #222222; }
+
 a {
   text-decoration: none;
   color: inherit; }
