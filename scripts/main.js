@@ -15,6 +15,10 @@ if (document.querySelector(".links")) {
     });
   });
 }
+if (document.getElementById("myResume")) {
+  const myResume = document.getElementById("myResume");
+  const resume = myResume.querySelector("img");
+}
 const cursor = document.querySelector(".cursor");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
@@ -24,8 +28,18 @@ let milisec = 0;
 toggler.addEventListener("click", () => {
   if (body.classList.contains("bg-light-body")) {
     body.classList.remove("bg-light-body");
+    if (document.getElementById("myResume")) {
+      const myResume = document.getElementById("myResume");
+      const resume = myResume.querySelector("img");
+      resume.src = "images/resume-dark.jpg";
+    }
   } else {
     body.classList.add("bg-light-body");
+    if (document.getElementById("myResume")) {
+      const myResume = document.getElementById("myResume");
+      const resume = myResume.querySelector("img");
+      resume.src = "images/resume.jpg";
+    }
   }
   if (header.classList.contains("bg-light-nav")) {
     header.classList.remove("bg-light-nav");
